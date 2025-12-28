@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slate — Terms & Privacy</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="brand">Slate</div>
+    <div class="navlinks">
+      <a href="./index.html">Home</a>
+      <a href="./terms.html">Terms</a>
+      <a href="./privacy.html">Privacy</a>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Slate Moderation</h1>
+      <p>Moderation & safety tools for Discord communities — with transparent policies.</p>
+      <div class="btnrow">
+        <!-- Optional: replace with your bot invite URL -->
+        <a class="btn" href="#" onclick="alert('Paste your invite link here!')">Invite Bot</a>
+        <!-- Optional: replace with support server URL -->
+        <a class="btn secondary" href="#" onclick="alert('Paste your support server link here!')">Support Server</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card half">
+        <h2>📜 Terms of Service</h2>
+        <p>Rules for using Slate, limits of liability, and acceptable use.</p>
+        <div class="btnrow">
+          <a class="btn secondary" href="./terms.html">Read Terms</a>
+        </div>
+      </div>
+
+      <div class="card half">
+        <h2>🔒 Privacy Policy</h2>
+        <p>What data Slate processes, why, and how to request deletion.</p>
+        <div class="btnrow">
+          <a class="btn secondary" href="./privacy.html">Read Privacy</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>What Slate does</h2>
+        <ul>
+          <li>Moderation commands (warn/strike/kick/ban)</li>
+          <li>Infractions logging (server-scoped)</li>
+          <li>Server blacklist + optional global blacklist network</li>
+          <li>Auto-moderation (anti-spam / raid protection)</li>
+        </ul>
+        <p class="small">
+          Note: You should customize the legal pages to match what your bot actually stores (MongoDB schemas, logs, etc.).
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Slate</div>
+      <div>
+        <a href="./terms.html">Terms</a> ·
+        <a href="./privacy.html">Privacy</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

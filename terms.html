@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slate — Terms of Service</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="brand">Slate</div>
+    <div class="navlinks">
+      <a href="./index.html">Home</a>
+      <a href="./terms.html">Terms</a>
+      <a href="./privacy.html">Privacy</a>
+    </div>
+  </div>
+
+  <main class="container doc">
+    <div class="card">
+      <h1>Terms of Service</h1>
+      <p class="small">Last updated: <span id="d"></span></p>
+
+      <h2>1. Acceptance</h2>
+      <p>By using Slate, you agree to these Terms. If you do not agree, do not use the service.</p>
+
+      <h2>2. Intended use</h2>
+      <p>Slate is a moderation tool for Discord servers. You are responsible for how you configure and use it.</p>
+
+      <h2>3. Prohibited use</h2>
+      <ul>
+        <li>Using Slate to harass, discriminate, or threaten users</li>
+        <li>Attempting to exploit, reverse engineer, or disrupt the service</li>
+        <li>Using the bot in ways that violate Discord’s Terms or Community Guidelines</li>
+      </ul>
+
+      <h2>4. Availability</h2>
+      <p>We try to keep Slate online, but uptime is not guaranteed. Features may change or be removed.</p>
+
+      <h2>5. Moderation actions</h2>
+      <p>Actions taken by Slate (timeouts, kicks, bans, blacklists) are initiated by server staff or automated rules set by server staff. Server owners and moderators are responsible for their decisions.</p>
+
+      <h2>6. Limitation of liability</h2>
+      <p>Slate is provided “as is” without warranties. To the maximum extent permitted by law, we are not liable for damages or losses resulting from use of the service.</p>
+
+      <h2>7. Contact</h2>
+      <p>For support or legal requests, contact: <strong>YOUR_EMAIL_HERE</strong></p>
+
+      <p class="small">Customize this page to match your server rules and your bot’s exact behavior.</p>
+    </div>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Slate</div>
+      <div>
+        <a href="./terms.html">Terms</a> ·
+        <a href="./privacy.html">Privacy</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("d").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>

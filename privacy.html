@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slate — Privacy Policy</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="brand">Slate</div>
+    <div class="navlinks">
+      <a href="./index.html">Home</a>
+      <a href="./terms.html">Terms</a>
+      <a href="./privacy.html">Privacy</a>
+    </div>
+  </div>
+
+  <main class="container doc">
+    <div class="card">
+      <h1>Privacy Policy</h1>
+      <p class="small">Last updated: <span id="d"></span></p>
+
+      <h2>1. What Slate processes</h2>
+      <p>Slate may process the following data to provide moderation features:</p>
+      <ul>
+        <li>Discord user IDs and guild (server) IDs</li>
+        <li>Moderation actions (warn/strike/timeout/kick/ban) and reasons</li>
+        <li>Configuration settings for your server (roles, toggles, thresholds)</li>
+      </ul>
+
+      <h2>2. What Slate does not store</h2>
+      <ul>
+        <li>Passwords</li>
+        <li>Payment information</li>
+        <li>Direct messages content (unless you explicitly build features that do)</li>
+      </ul>
+
+      <h2>3. Why we use this data</h2>
+      <ul>
+        <li>To enforce server-configured moderation rules</li>
+        <li>To keep an audit trail of actions (infractions)</li>
+        <li>To protect servers from spam and raids</li>
+      </ul>
+
+      <h2>4. Data retention</h2>
+      <p>Data is retained as needed for moderation history and server configuration. Server owners may request deletion.</p>
+
+      <h2>5. Data sharing</h2>
+      <p>We do not sell your data. Data may be processed by hosting providers as required to operate the service.</p>
+
+      <h2>6. Your rights</h2>
+      <p>You may request access to or deletion of stored data by contacting: <strong>YOUR_EMAIL_HERE</strong></p>
+
+      <h2>7. Changes</h2>
+      <p>We may update this Privacy Policy. Updates will be posted on this page.</p>
+
+      <p class="small">
+        Important: If you enable “Global Blacklist (GBL) network”, disclose that user IDs and blacklist reasons may be shared across servers using your bot.
+      </p>
+    </div>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Slate</div>
+      <div>
+        <a href="./terms.html">Terms</a> ·
+        <a href="./privacy.html">Privacy</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("d").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
